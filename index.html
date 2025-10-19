@@ -3,289 +3,310 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Habibi Concept - Luxury Hair & Beauty</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
-
-    <style>
-        /* Reset and General Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            font-size: 18px;
-            line-height: 1.6;
-            background-color: #f7f7f7;
-            color: #333;
-        }
-
-        h1, h2, h3 {
-            font-family: 'Roboto Slab', serif;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        /* Header */
-        header {
-            background: linear-gradient(135deg, #FF4081, #FF9A8B);
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-            position: relative;
-        }
-
-        header h1 {
-            font-size: 72px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 20px;
-        }
-
-        header p {
-            font-size: 24px;
-            font-weight: 300;
-            letter-spacing: 1px;
-        }
-
-        /* About Section */
-        section.about {
-            display: flex;
-            justify-content: center;
-            padding: 80px 0;
-            background: #fff;
-        }
-
-        section.about .content {
-            max-width: 800px;
-            text-align: center;
-        }
-
-        section.about img {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
-        }
-
-        section.about h2 {
-            font-size: 48px;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-
-        section.about p {
-            font-size: 20px;
-            color: #555;
-            line-height: 1.8;
-        }
-
-        /* Services Section */
-        section.services {
-            background: #f0f0f0;
-            padding: 100px 0;
-        }
-
-        section.services h2 {
-            text-align: center;
-            font-size: 48px;
-            font-weight: 700;
-            margin-bottom: 40px;
-            color: #333;
-        }
-
-        .service-cards {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 40px;
-            padding: 0 20px;
-        }
-
-        .service-card {
-            background-color: #fff;
-            width: 30%;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-        }
-
-        .service-card h3 {
-            font-size: 28px;
-            font-weight: 600;
-            margin-bottom: 20px;
-            color: #FF4081;
-        }
-
-        .service-card p {
-            font-size: 18px;
-            color: #777;
-            line-height: 1.6;
-        }
-
-        /* Contact Section */
-        section.contact {
-            background: #222;
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-        }
-
-        section.contact h2 {
-            font-size: 48px;
-            margin-bottom: 40px;
-            font-weight: 700;
-        }
-
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 18px;
-            border-radius: 8px;
-            border: none;
-            margin: 12px 0;
-            font-size: 18px;
-            background-color: #f7f7f7;
-            color: #333;
-        }
-
-        .contact-form button {
-            padding: 18px 40px;
-            background-color: #FF4081;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 20px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .contact-form button:hover {
-            background-color: #FF9A8B;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #222;
-            color: white;
-            padding: 30px 0;
-            text-align: center;
-        }
-
-        footer p {
-            font-size: 16px;
-        }
-
-        /* Animations and Transitions */
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(30px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-
-        .fadeIn {
-            animation: fadeIn 1s ease-out;
-        }
-
-        /* Media Queries */
-        @media only screen and (max-width: 768px) {
-            section.about {
-                flex-direction: column;
-                padding: 40px 0;
-            }
-
-            section.about img {
-                width: 80%;
-                margin-bottom: 20px;
-            }
-
-            .service-cards {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .service-card {
-                width: 80%;
-            }
-
-            footer p {
-                font-size: 14px;
-            }
-        }
-
-    </style>
+    <meta name="description" content="Cut & Crown Barber - Classic cuts, modern style. Professional barber services in Your City. Book your appointment today!">
+    <meta name="keywords" content="barber, haircut, beard trim, shave, grooming, Your City">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Cut & Crown Barber - Classic Cuts. Modern Style.">
+    <meta property="og:description" content="Premium barber services with classic cuts and modern style. Experience professional grooming at its finest.">
+    <meta property="og:image" content="https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg?auto=compress&cs=tinysrgb&w=1200">
+    <meta property="og:url" content="https://cutandcrown.example">
+    <meta property="og:type" content="website">
+    
+    <title>Cut & Crown Barber - Classic Cuts. Modern Style.</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✂️</text></svg>">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <!-- Skip to content link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Header -->
-    <header class="fadeIn">
-        <h1>Habibi Concept</h1>
-        <p>Luxury Hair & Beauty Salon</p>
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">✂️</span>
+                        <span class="logo-text">Cut & Crown</span>
+                    </a>
+                </div>
+                
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="index.html" role="menuitem" class="nav-link active">Home</a></li>
+                    <li role="none"><a href="about.html" role="menuitem" class="nav-link">About</a></li>
+                    <li role="none"><a href="services.html" role="menuitem" class="nav-link">Services</a></li>
+                    <li role="none"><a href="gallery.html" role="menuitem" class="nav-link">Gallery</a></li>
+                    <li role="none"><a href="contact.html" role="menuitem" class="nav-link">Contact</a></li>
+                    <li role="none"><a href="#booking" role="menuitem" class="nav-link btn btn-primary">Book Now</a></li>
+                </ul>
+                
+                <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </nav>
     </header>
 
-    <!-- About Section -->
-    <section class="about fadeIn">
-        <img src="https://via.placeholder.com/1200x600" alt="Salon Image">
-        <div class="content">
-            <h2>About Us</h2>
-            <p>At Habibi Concept, we offer a luxurious blend of hairstyling and beauty services that cater to the modern-day trendsetter. Our salon is built for those who appreciate elegance, sophistication, and quality. Let us transform your beauty routine into an extraordinary experience.</p>
-        </div>
-    </section>
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" role="banner">
+            <div class="hero-bg">
+                <img src="https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg?auto=compress&cs=tinysrgb&w=1920" 
+                     alt="Professional barber cutting hair in modern barbershop" 
+                     class="hero-image" 
+                     loading="eager">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Classic Cuts.<br>Modern Style.</h1>
+                    <p class="hero-subtitle">Where tradition meets contemporary grooming excellence</p>
+                    <p class="hero-usp">25+ years of premium barbering experience in the heart of Your City</p>
+                    
+                    <div class="hero-cta">
+                        <a href="#booking" class="btn btn-primary btn-lg">Book Appointment</a>
+                        <a href="services.html" class="btn btn-secondary btn-lg">View Services</a>
+                    </div>
+                    
+                    <div class="hero-info">
+                        <div class="hero-phone">
+                            <span class="icon">📞</span>
+                            <a href="tel:+910000000000" class="phone-link">+91 0000000000</a>
+                        </div>
+                        <div class="hero-hours">
+                            <span class="icon">🕐</span>
+                            <span>Mon-Sat: 9AM-8PM | Sun: Closed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Services Section -->
-    <section class="services fadeIn">
-        <h2>Our Services</h2>
-        <div class="service-cards">
-            <div class="service-card">
-                <h3>Hairstyling</h3>
-                <p>Transform your look with our bespoke hairstyling services, tailored to suit your unique style.</p>
+        <!-- Quick Services Section -->
+        <section class="quick-services section" aria-labelledby="quick-services-title">
+            <div class="container">
+                <h2 id="quick-services-title" class="section-title">Popular Services</h2>
+                <div class="services-grid">
+                    <div class="service-card" tabindex="0">
+                        <div class="service-icon">💇‍♂️</div>
+                        <h3 class="service-name">Classic Haircut</h3>
+                        <p class="service-price">₹399</p>
+                        <a href="services.html#haircut" class="btn btn-outline">Learn More</a>
+                    </div>
+                    <div class="service-card" tabindex="0">
+                        <div class="service-icon">🧔</div>
+                        <h3 class="service-name">Beard Trim</h3>
+                        <p class="service-price">₹199</p>
+                        <a href="services.html#beard" class="btn btn-outline">Learn More</a>
+                    </div>
+                    <div class="service-card" tabindex="0">
+                        <div class="service-icon">🪒</div>
+                        <h3 class="service-name">Hot Towel Shave</h3>
+                        <p class="service-price">₹499</p>
+                        <a href="services.html#shave" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                <div class="section-cta">
+                    <a href="services.html" class="btn btn-primary">View All Services</a>
+                </div>
             </div>
-            <div class="service-card">
-                <h3>Facial Treatments</h3>
-                <p>Indulge in rejuvenating facial treatments that leave your skin glowing and youthful.</p>
-            </div>
-            <div class="service-card">
-                <h3>Makeup Artistry</h3>
-                <p>Enhance your beauty with professional makeup services for any occasion or event.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section class="contact fadeIn">
-        <h2>Contact Us</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="6" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+        <!-- Testimonials Section -->
+        <section class="testimonials section section-dark" aria-labelledby="testimonials-title">
+            <div class="container">
+                <h2 id="testimonials-title" class="section-title">What Our Clients Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars" aria-label="5 star rating">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <blockquote class="testimonial-text">
+                            "Best barbershop in the city! The attention to detail and professionalism is unmatched. I've been coming here for 3 years now."
+                        </blockquote>
+                        <cite class="testimonial-author">— Rajesh Kumar, Regular Client</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars" aria-label="5 star rating">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <blockquote class="testimonial-text">
+                            "Amazing service and such a welcoming atmosphere. The hot towel shave is absolutely incredible. Highly recommend!"
+                        </blockquote>
+                        <cite class="testimonial-author">— Amit Sharma, New Client</cite>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars" aria-label="5 star rating">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+                        <blockquote class="testimonial-text">
+                            "Clean, professional, and skilled barbers who really listen. My go-to place for all my grooming needs."
+                        </blockquote>
+                        <cite class="testimonial-author">— Vikram Singh, Loyal Customer</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section id="booking" class="booking section" aria-labelledby="booking-title">
+            <div class="container">
+                <h2 id="booking-title" class="section-title">Book Your Appointment</h2>
+                <p class="section-subtitle">Schedule your visit and experience premium grooming</p>
+                
+                <form class="booking-form" id="bookingForm" novalidate>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="clientName" class="form-label">Full Name *</label>
+                            <input type="text" id="clientName" name="clientName" class="form-input" required 
+                                   aria-describedby="clientName-error">
+                            <div id="clientName-error" class="form-error" role="alert" aria-live="polite"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="clientPhone" class="form-label">Phone Number *</label>
+                            <input type="tel" id="clientPhone" name="clientPhone" class="form-input" required 
+                                   placeholder="+91 0000000000" aria-describedby="clientPhone-error">
+                            <div id="clientPhone-error" class="form-error" role="alert" aria-live="polite"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="clientEmail" class="form-label">Email Address *</label>
+                            <input type="email" id="clientEmail" name="clientEmail" class="form-input" required 
+                                   aria-describedby="clientEmail-error">
+                            <div id="clientEmail-error" class="form-error" role="alert" aria-live="polite"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service" class="form-label">Select Service *</label>
+                            <select id="service" name="service" class="form-input" required 
+                                    aria-describedby="service-error">
+                                <option value="">Choose a service</option>
+                                <option value="haircut">Classic Haircut - ₹399</option>
+                                <option value="beard">Beard Trim - ₹199</option>
+                                <option value="shave">Hot Towel Shave - ₹499</option>
+                                <option value="combo">Haircut + Beard - ₹549</option>
+                                <option value="deluxe">Deluxe Package - ₹799</option>
+                            </select>
+                            <div id="service-error" class="form-error" role="alert" aria-live="polite"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferredDate" class="form-label">Preferred Date *</label>
+                            <input type="date" id="preferredDate" name="preferredDate" class="form-input" required 
+                                   aria-describedby="preferredDate-error">
+                            <div id="preferredDate-error" class="form-error" role="alert" aria-live="polite"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="preferredTime" class="form-label">Preferred Time *</label>
+                            <select id="preferredTime" name="preferredTime" class="form-input" required 
+                                    aria-describedby="preferredTime-error">
+                                <option value="">Choose a time</option>
+                                <option value="09:00">9:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                            </select>
+                            <div id="preferredTime-error" class="form-error" role="alert" aria-live="polite"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="notes" class="form-label">Additional Notes (Optional)</label>
+                        <textarea id="notes" name="notes" class="form-input" rows="4" 
+                                  placeholder="Any special requests or preferences..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        <span class="btn-text">Book Appointment</span>
+                        <span class="btn-loading" style="display: none;">Booking...</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Habibi Concept. All Rights Reserved.</p>
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <h3 class="footer-title">Cut & Crown Barber</h3>
+                        <p class="footer-tagline">Classic Cuts. Modern Style.</p>
+                    </div>
+                    <div class="footer-contact">
+                        <p><strong>📍 Address:</strong><br>123 Main St, Your City</p>
+                        <p><strong>📞 Phone:</strong><br><a href="tel:+910000000000">+91 0000000000</a></p>
+                        <p><strong>✉️ Email:</strong><br><a href="mailto:info@scriptedwebs.in">info@scriptedwebs.in</a></p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Opening Hours</h4>
+                    <div class="footer-hours">
+                        <p>Monday - Saturday: 9:00 AM - 8:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <nav class="footer-nav" role="navigation" aria-label="Footer navigation">
+                        <a href="about.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Follow Us</h4>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/cutandcrown" aria-label="Follow us on Instagram" target="_blank" rel="noopener">📷 Instagram</a>
+                        <a href="https://facebook.com/cutandcrown" aria-label="Follow us on Facebook" target="_blank" rel="noopener">📘 Facebook</a>
+                        <a href="https://wa.me/+910000000000" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">💬 WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                 <p>&copy; 2025 Cut & Crown Barber. All rights reserved.|Developed by <a href="https://www.scriptedwebs.in/">ScripteWebs</a></p>
+            </div>
+        </div>
     </footer>
 
+    <!-- Toast Notification -->
+    <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-content">
+            <span class="toast-icon">✅</span>
+            <span class="toast-message"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
