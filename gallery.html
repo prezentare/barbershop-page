@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View our gallery of professional haircuts and grooming services at Cut & Crown Barber. See our work and get inspired for your next style.">
+    <title>Gallery - Cut & Crown Barber</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✂️</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">✂️</span>
+                        <span class="logo-text">Cut & Crown</span>
+                    </a>
+                </div>
+                
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="index.html#booking" class="nav-link btn btn-primary">Book Now</a></li>
+                </ul>
+                
+                <button class="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Our Work Gallery</h1>
+                <p class="page-subtitle">See the artistry and craftsmanship in every cut</p>
+            </div>
+        </section>
+
+        <!-- Gallery Filter -->
+        <section class="gallery-filter section">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="haircuts">Haircuts</button>
+                    <button class="filter-btn" data-filter="beards">Beards</button>
+                    <button class="filter-btn" data-filter="styling">Styling</button>
+                    <button class="filter-btn" data-filter="shop">Our Shop</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-grid section">
+            <div class="container">
+                <div class="gallery-container">
+                    <!-- Haircut Images -->
+                    <div class="gallery-item" data-category="haircuts">
+                        <img src="https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                             alt="Professional classic haircut with scissor work and styling" 
+                             loading="lazy"
+                             data-full="https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Classic Business Cut</h3>
+                            <p class="gallery-description">Precision scissor work with modern styling</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="haircuts">
+                        <img src="https://images.pexels.com/photos/1319460/pexels-photo-1319460.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                             alt="Modern fade haircut with textured top styling" 
+                             loading="lazy"
+                             data-full="https://images.pexels.com/photos/1319460/pexels-photo-1319460.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Modern Fade</h3>
+                            <p class="gallery-description">Contemporary fade with textured styling</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="beards">
+                        <img src="https://images.pexels.com/photos/1570807/pexels-photo-1570807.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                             alt="Professional beard trimming and shaping service" 
+                             loading="lazy"
+                             data-full="https://images.pexels.com/photos/1570807/pexels-photo-1570807.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Beard Sculpting</h3>
+                            <p class="gallery-description">Expert beard shaping and trimming</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="styling">
+                        <img src="https://images.pexels.com/photos/1319461/pexels-photo-1319461.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                             alt="Traditional hot towel straight razor shave service" 
+                             loading="lazy"
+                             data-full="https://images.pexels.com/photos/1319461/pexels-photo-1319461.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Hot Towel Shave</h3>
+                            <p class="gallery-description">Traditional straight razor experience</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="haircuts">
+                        <img src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                             alt="Stylish pompadour haircut with professional styling" 
+                             loading="lazy"
+                             data-full="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Classic Pompadour</h3>
+                            <p class="gallery-description">Vintage-inspired styling with modern twist</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="beards">
+                        <img src="https://images.pexels.com/photos/1192601/pexels-photo-1192601.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                             alt="Full beard grooming and maintenance service" 
+                             loading="lazy"
+                             data-full="https://images.pexels.com/photos/1192601/pexels-photo-1192601.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Full Beard Grooming</h3>
+                            <p class="gallery-description">Complete beard maintenance and styling</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="shop">
+                        <img src="https://images.pexels.com/photos/705255/pexels-photo-705255.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                             alt="Interior view of Cut & Crown barbershop with professional barber chairs" 
+                             loading="lazy"
+                             data-full="https://images.pexels.com/photos/705255/pexels-photo-705255.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Our Professional Setup</h3>
+                            <p class="gallery-description">Modern barbershop with vintage touches</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="styling">
+                        <img src="https://images.pexels.com/photos/2040625/pexels-photo-2040625.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                             alt="Professional hair styling with quality products and techniques" 
+                             loading="lazy"
+                             data-full="https://images.pexels.com/photos/2040625/pexels-photo-2040625.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Premium Styling</h3>
+                            <p class="gallery-description">Quality products for lasting results</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="shop">
+                        <img src="https://images.pexels.com/photos/3993318/pexels-photo-3993318.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                             alt="Barber tools and equipment including scissors, razors, and styling products" 
+                             loading="lazy"
+                             data-full="https://images.pexels.com/photos/3993318/pexels-photo-3993318.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Professional Tools</h3>
+                            <p class="gallery-description">Premium equipment for quality service</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="haircuts">
+                        <img src="https://images.pexels.com/photos/1805600/pexels-photo-1805600.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                             alt="Trendy undercut hairstyle with precise clipper work" 
+                             loading="lazy"
+                             data-full="https://images.pexels.com/photos/1805600/pexels-photo-1805600.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Trendy Undercut</h3>
+                            <p class="gallery-description">Modern style with precision clipper work</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="beards">
+                        <img src="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                             alt="Mustache trimming and detailed grooming service" 
+                             loading="lazy"
+                             data-full="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Mustache Grooming</h3>
+                            <p class="gallery-description">Detailed mustache trimming and styling</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="styling">
+                        <img src="https://images.pexels.com/photos/1458808/pexels-photo-1458808.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                             alt="Hair treatment and scalp massage service" 
+                             loading="lazy"
+                             data-full="https://images.pexels.com/photos/1458808/pexels-photo-1458808.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                        <div class="gallery-overlay">
+                            <h3 class="gallery-title">Scalp Treatment</h3>
+                            <p class="gallery-description">Relaxing scalp massage and treatment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="gallery-cta section section-dark">
+            <div class="container">
+                <h2 class="section-title">Ready for Your Transformation?</h2>
+                <p class="section-subtitle">Book your appointment and experience the Cut & Crown difference</p>
+                <a href="index.html#booking" class="btn btn-primary btn-lg">Book Your Appointment</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Gallery Lightbox Modal -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+        <div class="lightbox-overlay" aria-label="Close lightbox"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close gallery lightbox">&times;</button>
+            <button class="lightbox-prev" aria-label="Previous image">&#8249;</button>
+            <button class="lightbox-next" aria-label="Next image">&#8250;</button>
+            <div class="lightbox-image-container">
+                <img id="lightbox-image" src="" alt="" loading="lazy">
+                <div class="lightbox-info">
+                    <h3 id="lightbox-title" class="lightbox-title"></h3>
+                    <p id="lightbox-description" class="lightbox-description"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <h3 class="footer-title">Cut & Crown Barber</h3>
+                        <p class="footer-tagline">Classic Cuts. Modern Style.</p>
+                    </div>
+                    <div class="footer-contact">
+                        <p><strong>📍 Address:</strong><br>123 Main St, Your City</p>
+                        <p><strong>📞 Phone:</strong><br><a href="tel:+910000000000">+91 0000000000</a></p>
+                        <p><strong>✉️ Email:</strong><br><a href="mailto:info@scriptedwebs.in">info@scriptedwebs.in</a></p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Opening Hours</h4>
+                    <div class="footer-hours">
+                        <p>Monday - Saturday: 9:00 AM - 8:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <nav class="footer-nav">
+                        <a href="about.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Follow Us</h4>
+                    <div class="footer-social">
+                        <a href="https://instagram.com/cutandcrown" target="_blank" rel="noopener">📷 Instagram</a>
+                        <a href="https://facebook.com/cutandcrown" target="_blank" rel="noopener">📘 Facebook</a>
+                        <a href="https://wa.me/+910000000000" target="_blank" rel="noopener">💬 WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                 <p>&copy; 2025 Cut & Crown Barber. All rights reserved.|Developed by <a href="https://www.scriptedwebs.in/">ScripteWebs</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-content">
+            <span class="toast-icon">✅</span>
+            <span class="toast-message"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
