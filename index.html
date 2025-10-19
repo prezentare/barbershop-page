@@ -1,12 +1,274 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HABIBI CONCEPT</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Habibi Concept</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, rgba(255, 129, 179, 1) 0%, rgba(246, 99, 142, 1) 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        /* About Section */
+        section.about {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 0;
+            align-items: center;
+        }
+
+        section.about img {
+            width: 45%;
+            border-radius: 10px;
+            box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        section.about div {
+            width: 50%;
+        }
+
+        section.about h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        section.about p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Services Section */
+        section.services {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        section.services h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .service-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service-card {
+            width: 30%;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            color: #777;
+        }
+
+        /* Contact Section */
+        section.contact {
+            background: #333;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        section.contact h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .contact-form button {
+            padding: 15px 30px;
+            background-color: #f66;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #ff0a66;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* Mobile Responsive */
+        @media only screen and (max-width: 768px) {
+            header h1 {
+                font-size: 36px;
+            }
+
+            section.about {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            section.about img {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            .service-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-card {
+                width: 80%;
+                margin-bottom: 30px;
+            }
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Bine ai venit la HABIBI CONCEPT!</h1>
-    <p>Aici va fi site-ul nostru!</p>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Habibi Concept</h1>
+            <p>Beauty and Hairstyling Redefined</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <img src="https://via.placeholder.com/500" alt="Hairstyling Image">
+            <div>
+                <h2>About Us</h2>
+                <p>At Habibi Concept, we specialize in cutting-edge hairstyling and beauty services that reflect the latest trends. Our team is committed to offering you a transformative experience that leaves you looking and feeling your best.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="service-card">
+                    <h3>Hairstyling</h3>
+                    <p>From cutting-edge styles to classic looks, we offer personalized hairstyling for every occasion.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Facial Treatments</h3>
+                    <p>Revitalize your skin with our luxury facial treatments, tailored to your skin’s needs.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Makeup Artistry</h3>
+                    <p>Our makeup artists use high-quality products to enhance your natural beauty for any event.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Habibi Concept. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
